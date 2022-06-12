@@ -5,7 +5,7 @@ import ExpenseDate from './ExpenseDate';
 import './ExpenseItem.css';
 
 export default function ExpenseItem(props) {
-  
+  const[title, setTitle] = useState(props.title);
 
   return (
     <Card className='expense-item'>
